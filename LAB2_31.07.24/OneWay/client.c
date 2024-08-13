@@ -40,7 +40,6 @@ int main()
 
     // STEP 4: Send the msg
     int numbytes;
-    struct sockaddr *their_addr_in = (struct sockaddr *)&their_addr; // Cast sockaddr_in to struct sockaddr *
     if ((numbytes = sendto(sockfd, arg, strlen(arg), 0, (struct sockaddr *)&their_addr, sizeof(struct sockaddr_in))) == -1)
     {
         perror("sendto");
