@@ -2,13 +2,11 @@
 #include <stdlib.h>
 
 #include <unistd.h>
-#include <errno.h>
 #include <string.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include <netdb.h>
 
 #define SERVERPORT 4952 // the port users will be connecting to
 
@@ -36,7 +34,8 @@ int main()
     // STEP 3: Get user input
     char arg[30]; // Buffer storing msg
     printf("Enter a message\n");
-    gets(arg);
+    // gets(arg);
+    fgets(arg, sizeof arg, stdin);
 
     // STEP 4: Send the msg
     int numbytes;

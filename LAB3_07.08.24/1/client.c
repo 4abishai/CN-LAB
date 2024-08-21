@@ -33,10 +33,7 @@ int main()
     while (1)
     {
         printf("Enter a message: ");
-        if (fgets(arg, MAXBUFLEN, stdin) == NULL)
-        {
-            break;
-        }
+        fgets(arg, MAXBUFLEN, stdin);
         arg[strcspn(arg, "\n")] = 0; // Remove newline
 
         if ((numbytes = sendto(sockfd, arg, strlen(arg), 0,
