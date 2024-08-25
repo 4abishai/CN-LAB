@@ -7,8 +7,8 @@
 #include <arpa/inet.h>
 #include <string.h>
 
-#define MAXBUFLEN 100
-#define SERVPORT 3550
+#define MAXBUFLEN 5000
+#define SERVPORT 3002
 
 int main()
 {

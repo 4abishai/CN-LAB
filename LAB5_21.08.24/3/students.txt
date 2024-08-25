@@ -1,0 +1,10 @@
+1 SHRISTI GUPTA 19 Computer Science
+2 MOHIT KAMAL RATH 20 Electrical Engineering
+3 SUMIT SAHU 18 Mechanical Engineering
+4 SWASTIDEEP KHUNTIA 21 Civil Engineering
+5 ABISHAI EMANUEL EKKA 19 Chemical Engineering
+6 GOPESH SATAPATHY 22 Electronics and Communication
+7 SRESHTHA GUHA ROY 20 Information Technology
+8 OMKARNATH PARUI 18 Aerospace Engineering
+9 ANKIT RAY 21 Biotechnology
+10 CHIRAYU SHARMA 19 Metallurgical Engineering

@@ -24,10 +24,11 @@ void checkEndianness()
 
     // By casting the pointer to unsigned char*, memory address can be
     // treated as pointing to a series of bytes rather than a single integer.
-    char first_byte = ((char *)&x)[0];
+    // [0] points to the least significant byte
+    char LSB = ((char *)&x)[0];
 
     // Use ternary operator to check and print endianness
-    printf("The system is %s Endian\n", first_byte ? "Little" : "Big");
+    printf("The system is %s Endian\n", LSB ? "Little" : "Big");
 }
 
 int main()
